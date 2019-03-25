@@ -11,13 +11,31 @@ logo                     : "/assets/images/blogger-logo-icon.png"
 repository               : "sevendark/sevendark.github.io"
 words_per_minute         : 200
 
+#search
+search                   : true
+search_full_content      : true
+search_provider          : "algolia"
+algolia:
+  application_id         : "ZFQT3WUK7B"
+  index_name             : "blog"
+  search_only_api_key    : "45a2db279aa615b36037af9d0c13dfb4"
+  powered_by             : true
+
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: UA-135913308-1"
+    anonymize_ip: false
+
 # Site Author
 author:
   name             : "Timothy Ji"
   bio              : "Java 工程师"
-  location         : "北京"
+  location         : "中国，北京"
   avatar           : "/assets/images/head.jpg"
-  email            : "sevendark@yeah.net"
+  email            : "sevendark@live.com"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
