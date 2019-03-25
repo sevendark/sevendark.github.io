@@ -19,9 +19,6 @@ author:
   avatar           : "/assets/images/travis.jpg"
   email            : "sevendark@yeah.net"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:sevendark@yeah.net
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.sevendark.cn"
@@ -149,3 +146,10 @@ defaults:
       read_time: true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
