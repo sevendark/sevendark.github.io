@@ -10,6 +10,7 @@ url                      : "https://blog.sevendark.cn"
 logo                     : "/assets/images/blogger-logo-icon.png"
 repository               : "sevendark/sevendark.github.io"
 words_per_minute         : 200
+breadcrumbs              : true
 
 #search
 search                   : true
@@ -26,7 +27,7 @@ algolia:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: UA-135913308-1"
+    tracking_id: "UA-135913308-1"
     anonymize_ip: false
 
 # Site Author
@@ -55,6 +56,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -139,11 +141,21 @@ whitelist:
 
 
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 compress_html:
