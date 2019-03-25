@@ -1,5 +1,8 @@
 main:
-  - title: "主页"
+  - title: "Home"
     url: /
-  - title: "GitHub"
+  - title: "Archive By Year"
+    url: /year-archive/
+  - title: "My GitHub"
     url: https://github.com/sevendark/
+  
