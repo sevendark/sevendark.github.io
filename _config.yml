@@ -7,6 +7,7 @@ title_separator          : "|"
 name                     : "Timothy ji"
 description              : "工作经验总结"
 url                      : "https://blog.sevendark.cn"
+logo                     : "/assets/images/blogger-logo-icon.png"
 repository               : "sevendark/sevendark.github.io"
 words_per_minute         : 200
 
@@ -15,6 +16,7 @@ author:
   name             : "Timothy Ji"
   bio              : "Java 工程师"
   location         : "北京"
+  avatar           : "/assets/images/travis.jpg"
   email            : "sevendark@yeah.net"
   links:
     - label: "Email"
@@ -22,7 +24,7 @@ author:
       url: mailto:sevendark@yeah.net
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://sevendark.cn"
+      url: "https://www.sevendark.cn"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sevendark/"
