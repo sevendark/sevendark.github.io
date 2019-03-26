@@ -60,8 +60,6 @@ footer:
 
 # Reading Files
 include:
-  - .htaccess
-  - _pages
   - posts
 exclude:
   - "*.sublime-project"
