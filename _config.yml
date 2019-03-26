@@ -22,7 +22,12 @@ algolia:
   search_only_api_key    : "45a2db279aa615b36037af9d0c13dfb4"
   powered_by             : true
 
-
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+    
 # Analytics
 analytics:
   provider: "google-gtag"
