@@ -1,13 +1,14 @@
 remote_theme             : "mmistakes/minimal-mistakes@4.15.2"
 minimal_mistakes_skin    : "default"
 # Site Settings
-locale                   : "en"
+locale                   : "zh"
 title                    : "Seven Dark 的博客"
 title_separator          : "|"
 name                     : "Timothy ji"
 description              : "工作经验总结"
 url                      : "https://blog.sevendark.cn"
-logo                     : "/assets/images/blogger-logo-icon.png"
+logo                     : "/assets/images/apple-touch-icon.png"
+teaser                   : "/assets/images/unsplash-gallery-image-3-th.jpg"
 repository               : "sevendark/sevendark.github.io"
 words_per_minute         : 200
 breadcrumbs              : true
