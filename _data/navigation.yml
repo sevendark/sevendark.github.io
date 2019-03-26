@@ -1,8 +1,10 @@
 main:
   - title: "Home"
     url: /
-  - title: "Archive By Year"
+  - title: "Year"
     url: /year-archive/
-  - title: "My GitHub"
+  - title: "Tag"
+    url: /tags/
+  - title: "GitHub"
     url: https://github.com/sevendark/
   
