@@ -60,6 +60,7 @@ footer:
 
 # Reading Files
 include:
+  - _pages
   - posts
 exclude:
   - "*.sublime-project"
