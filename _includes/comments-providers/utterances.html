@@ -13,9 +13,7 @@
       script.setAttribute('repo', '{{ site.repository }}');
       script.setAttribute('issue-term', '{{ site.comments.utterances.issue_term | default: "pathname" }}');
       script.setAttribute('theme', '{{ site.comments.utterances.theme | default: "github-light" }}');
-      {% if site.comments.utterances.label %}
       script.setAttribute('label', '{{ site.comments.utterances.theme.label }}');
-      {% endif %}
       script.setAttribute('crossorigin', 'anonymous');
   
       commentContainer.appendChild(script);
