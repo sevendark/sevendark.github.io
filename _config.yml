@@ -5,7 +5,7 @@ locale                   : "en"
 title                    : "SevenDark Blog"
 title_separator          : "|"
 name                     : "Timothy ji"
-description              : "工作经验总结"
+description              : "SevenDark Blog"
 url                      : "https://blog.sevendark.cn"
 logo                     : "/assets/images/site-logo.png"
 teaser                   : "/assets/images/unsplash-gallery-image-3-th.jpg"
@@ -39,7 +39,7 @@ analytics:
 # Site Author
 author:
   name             : "Timothy Ji"
-  bio              : "Java 工程师"
+  bio              : "Java enginner"
   location         : "Beijing, China"
   avatar           : "/assets/images/head.jpg"
   email            : "sevendark@live.com"

@@ -40,4 +40,27 @@ install nginx
    sudo apt install nginx
 ```
 
-## Run
+## File Path
+
+### log file
+error.log and access.log
+- `/usr/local/nginx/logs`
+- `/var/log/nginx`
+
+### pid file
+nginx.pid
+- `/var/local/nginx/logs`
+- `/var/run`
+
+### config file
+nginx.conf
+- `/user/local/nginx/conf`
+- `/etc/nginx`
+- `/usr/local/etc/nginx`
+
+## command
+
+```sh
+nginx -s reload
+nginx -s quit
+```
