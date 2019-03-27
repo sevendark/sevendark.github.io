@@ -1,9 +1,9 @@
 main:
   - title: "Home"
     url: /
-  - title: "Post By Tag"
-    url: /tags/
-  - title: "Posts by Category"
-    url: /categories/
+  - title: "Posts by Year"
+    url: /year-archive/
   - title: "Favorites"
     url: /Favorites
+  - title: "Help"
+    url: http://help.sevendark.cn
