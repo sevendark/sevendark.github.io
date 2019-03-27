@@ -1,5 +1,5 @@
 ---
-title: "标签分类"
+title: "Post By Tag"
 permalink: /tags/
 layout: tags
 author_profile: true

@@ -1,7 +1,7 @@
 remote_theme             : "mmistakes/minimal-mistakes@4.15.2"
 minimal_mistakes_skin    : "default"
 # Site Settings
-locale                   : "zh"
+locale                   : "en"
 title                    : "Seven Dark 的博客"
 title_separator          : "|"
 name                     : "Timothy ji"

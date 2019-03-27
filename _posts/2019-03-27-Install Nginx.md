@@ -4,7 +4,14 @@ categories:
   - Tec
 tags:
   - Nginx
+toc: true
+toc_label: "Outline"
+toc_icon: "cog"
 ---
+
+some thing about nginx: install, run 
+
+## Install
 
 install the required package
 ```sh
@@ -32,3 +39,5 @@ install nginx
    sudo apt update
    sudo apt install nginx
 ```
+
+## Run
