@@ -2,7 +2,7 @@ remote_theme             : "mmistakes/minimal-mistakes@4.15.2"
 minimal_mistakes_skin    : "default"
 # Site Settings
 locale                   : "en"
-title                    : "Seven Dark 的博客"
+title                    : "SevenDark Blog"
 title_separator          : "|"
 name                     : "Timothy ji"
 description              : "工作经验总结"
@@ -40,7 +40,7 @@ analytics:
 author:
   name             : "Timothy Ji"
   bio              : "Java 工程师"
-  location         : "中国，北京"
+  location         : "Beijing, China"
   avatar           : "/assets/images/head.jpg"
   email            : "sevendark@live.com"
   links:
