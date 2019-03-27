@@ -5,5 +5,5 @@ main:
     url: /year-archive/
   - title: "Favorites"
     url: /Favorites
-  - title: "Help"
-    url: http://help.sevendark.cn
+  - title: "My GitHub"
+    url: https://github.com/sevendark
