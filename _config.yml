@@ -7,7 +7,7 @@ title_separator          : "|"
 name                     : "Timothy ji"
 description              : "工作经验总结"
 url                      : "https://blog.sevendark.cn"
-logo                     : "/assets/images/apple-touch-icon.png"
+logo                     : "/assets/images/site-logo.png"
 teaser                   : "/assets/images/unsplash-gallery-image-3-th.jpg"
 repository               : "sevendark/sevendark.github.io"
 words_per_minute         : 200
