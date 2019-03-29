@@ -15,12 +15,6 @@ breadcrumbs              : true
 
 
 # Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
 og_image                 : "/assets/images/site-logo.png"
 
 #search
