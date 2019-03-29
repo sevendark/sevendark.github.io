@@ -4,6 +4,8 @@ categories:
   - Life
 tags:
   - 彩铅
+header:
+  teaser: /assets/blog_images/paintings.jpg
 ---
 
 用整个周六画了个朋友的小狗😂

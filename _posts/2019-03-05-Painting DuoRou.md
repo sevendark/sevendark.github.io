@@ -4,6 +4,8 @@ categories:
   - Life
 tags:
   - 彩铅
+header:
+  teaser: /assets/blog_images/paintings.jpg
 ---
 
 > 好久没有画画了，突然想充实一下自己，不然六日在家太颓废了
