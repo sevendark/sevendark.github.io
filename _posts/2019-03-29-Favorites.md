@@ -10,8 +10,9 @@ header:
 
 ## github 仓库
  * ⭐️ [minimal mistakes](https://github.com/mmistakes/minimal-mistakes)
+ * ⭐️ [Github Markdown代码块支持的语言选项](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
 
 
-## 快速指引
- * ⭐️ [minimal mistakes quick start guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
- * ⭐️ [jade syntax docs](http://naltatis.github.io/jade-syntax-docs/)
+## 其它文档
+ * ⭐️ [minimal mistakes 快速指引](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+ * ⭐️ [jade 语法工具](http://naltatis.github.io/jade-syntax-docs/)
