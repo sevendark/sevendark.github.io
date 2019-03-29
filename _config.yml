@@ -70,7 +70,7 @@ footer:
 
 # Reading Files
 include:
-  - _pages
+  - pages
   - posts
 exclude:
   - "*.sublime-project"
