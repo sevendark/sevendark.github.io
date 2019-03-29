@@ -13,4 +13,4 @@ header:
 
 
 ## 快速指引
-🔶 [minimal mistakes](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+🔶 [minimal mistakes quick start guide](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
