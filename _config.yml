@@ -1,11 +1,11 @@
 remote_theme             : "mmistakes/minimal-mistakes@4.15.2"
 minimal_mistakes_skin    : "default"
 # Site Settings
-locale                   : "en"
-title                    : "SevenDark Blog"
+locale                   : "zh"
+title                    : "SevenDark 的博客"
 title_separator          : "|"
 name                     : "Timothy ji"
-description              : "SevenDark Blog"
+description              : "一些技术博客，还有生活博客，欢迎查看"
 url                      : "https://blog.sevendark.cn"
 logo                     : "/assets/images/site-logo.png"
 teaser                   : "/assets/images/unsplash-gallery-image-3-th.jpg"
@@ -39,15 +39,15 @@ analytics:
 # Site Author
 author:
   name             : "Timothy Ji"
-  bio              : "Java enginner"
-  location         : "Beijing, China"
+  bio              : "活得开心就好"
+  location         : "中国， 北京"
   avatar           : "/assets/images/head.jpg"
   email            : "sevendark@yeah.net"
   links:
-    - label: "Website"
+    - label: "个人网站"
       icon: "fas fa-fw fa-link"
       url: "https://www.sevendark.cn"
-    - label: "GitHub"
+    - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sevendark/"
 

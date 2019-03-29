@@ -1,9 +1,9 @@
 main:
-  - title: "Home"
+  - title: "主页"
     url: /
-  - title: "Year"
+  - title: "时间"
     url: /year-archive/
-  - title: "Category"
+  - title: "类别"
     url: /categories/
-  - title: "My GitHub"
+  - title: "我的GitHub"
     url: https://github.com/sevendark
