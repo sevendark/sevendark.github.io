@@ -48,9 +48,9 @@ author:
   avatar           : "/assets/images/head.jpg"
   email            : "sevendark@yeah.net"
   links:
-    - label: "个人网站"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.sevendark.cn"
+    - label: “领英”
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/timothy-ji-579163184/"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sevendark/"
@@ -67,6 +67,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/seven7dark/"
+    - label: “领英”
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/timothy-ji-579163184/"
 
 # Reading Files
 include:
