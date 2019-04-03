@@ -48,7 +48,7 @@ author:
   avatar           : "/assets/images/head.jpg"
   email            : "sevendark@yeah.net"
   links:
-    - label: “领英”
+    - label: "领英"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/timothy-ji-579163184/"
     - label: "Github"
@@ -67,7 +67,7 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/seven7dark/"
-    - label: “领英”
+    - label: "领英"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/timothy-ji-579163184/"
 
