@@ -15,8 +15,8 @@ header:
 
 ## 其它文档
  * ⭐️ [minimal mistakes 快速指引](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+  * ⭐️ [Java String Formatter](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html)
 
 ## 工具
  * ⭐️ [fontawesome icon search](https://fontawesome.com/icons?d=gallery) 
  * ⭐️ [jade 语法工具](http://naltatis.github.io/jade-syntax-docs/)
- * ⭐️ [Java String Formatter](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html)
