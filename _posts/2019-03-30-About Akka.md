@@ -98,4 +98,4 @@ OOP核心之一：封装。封装使对象中的数据不能直接被外部访�
 
 > 父级actor可以决定在某些故障中重启子actor。
 
-[Akka 官方介绍](https://doc.akka.io/docs/akka/current/guide/introduction.html)
+[Akka 官方介绍](https://doc.akka.io/docs/akka/current/guide/introduction.html){:target="_blank"}

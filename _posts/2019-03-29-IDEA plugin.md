@@ -13,7 +13,7 @@ header:
 
 ## 功能1: play.libs.F.Option 转 java.util.Optional
 有一些小伙伴还在用play framework2.3么，在2.5的时候play移除了自带的Option类
-[Release25 Java Migration Guide](https://github.com/playframework/playframework/blob/master/documentation/manual/releases/release25/migration25/JavaMigration25.md)
+[Release25 Java Migration Guide](https://github.com/playframework/playframework/blob/master/documentation/manual/releases/release25/migration25/JavaMigration25.md){:target="_blank"}
 这个插件可以实现替换所有`play.libs.F.Option`到`java.util.Optional`
 
 ## 功能2:把JOOQ代码转换成SQL
@@ -48,6 +48,6 @@ group by
 
 有需要的小伙伴可以直接在IDEA的插件库中搜索：CodeTools
 
-或者跳转IDEA的插件库网站搜索下载（国内可能无法访问）：[https://plugins.jetbrains.com/plugin/11467-aicoder](https://plugins.jetbrains.com/plugin/11467-aicoder)
+或者跳转IDEA的插件库网站搜索下载（国内可能无法访问）：[https://plugins.jetbrains.com/plugin/11467-aicoder](https://plugins.jetbrains.com/plugin/11467-aicoder){:target="_blank"}
 
-Github地址：[https://github.com/sevendark/IDEACodeTools](https://github.com/sevendark/IDEACodeTools)
+Github地址：[https://github.com/sevendark/IDEACodeTools](https://github.com/sevendark/IDEACodeTools){:target="_blank"}

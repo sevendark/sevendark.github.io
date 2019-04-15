@@ -9,14 +9,14 @@ header:
 收藏一些有用的网站和Github的仓库地址
 
 ## github 仓库
- * ⭐️ [minimal mistakes](https://github.com/mmistakes/minimal-mistakes)
- * ⭐️ [Github Markdown代码块支持的语言选项](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
+ * ⭐️ [minimal mistakes](https://github.com/mmistakes/minimal-mistakes){:target="_blank"}
+ * ⭐️ [Github Markdown代码块支持的语言选项](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml){:target="_blank"}
 
 
 ## 其它文档
- * ⭐️ [minimal mistakes 快速指引](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
- * ⭐️ [Java String Formatter](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html)
+ * ⭐️ [minimal mistakes 快速指引](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/){:target="_blank"}
+ * ⭐️ [Java String Formatter](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html){:target="_blank"}
 
 ## 工具
- * ⭐️ [fontawesome icon search](https://fontawesome.com/icons?d=gallery) 
- * ⭐️ [jade 语法工具](http://naltatis.github.io/jade-syntax-docs/)
+ * ⭐️ [fontawesome icon search](https://fontawesome.com/icons?d=gallery){:target="_blank"}
+ * ⭐️ [jade 语法工具](http://naltatis.github.io/jade-syntax-docs/){:target="_blank"}
