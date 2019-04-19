@@ -20,3 +20,4 @@ header:
 ## 工具
  * ⭐️ [fontawesome icon search](https://fontawesome.com/icons?d=gallery){:target="_blank"}
  * ⭐️ [jade 语法工具](http://naltatis.github.io/jade-syntax-docs/){:target="_blank"}
+ * ⭐️ [motrix 下载工具](https://motrix.app/){:target="_blank"}
