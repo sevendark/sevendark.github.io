@@ -1,5 +1,5 @@
 ---
-title: "安利一个自己写的IDEA插件"
+title: "安利一个IDEA插件"
 categories:
   - Tec
 tags:
