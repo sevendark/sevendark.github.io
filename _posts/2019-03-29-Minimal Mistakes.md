@@ -25,3 +25,7 @@ Uncaught TypeError: Cannot read property 'value' of undefined
 - 超链接跳转新页面：`[Text](#link){:target="_blank"}`
 - 超链接添加按钮样式与控制大小：`[Text](#link){: .btn .btn--primary .btn--x-large}`
 - 小提示：`paragraph with {: .notice--success}`
+
+## 相关命令
+- 本地启动jekyll `bundle exec jekyll serve`
+- 同步ALGOLIA索引 `ALGOLIA_API_KEY=********** bundle exec jekyll algolia`

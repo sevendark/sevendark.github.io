@@ -8,8 +8,8 @@ toc: true
 header:
   teaser: /assets/blog_images/idea.jpeg
 ---
-在工作中遇到一些经常重复做的事，就专门写了一个小插件。
-暂时只能实现两个功能，后期会慢慢添加。
+在工作中遇到一些经常重复做的事，就专门写了一个IDEA小插件。
+暂时只能实现三个功能，后期会慢慢添加。
 
 ## 功能1: play.libs.F.Option 转 java.util.Optional
 有一些小伙伴还在用play framework2.3么，在2.5的时候play移除了自带的Option类
@@ -17,7 +17,7 @@ header:
 这个插件可以实现替换所有`play.libs.F.Option`到`java.util.Optional`
 
 ## 功能2:把JOOQ代码转换成SQL
-java 代码
+在IDEA中选中一段java 代码：
 ```java
 select(TBLUSER.ID, TBLUSER.NAME)
 .from(TBLUSER)
@@ -26,7 +26,8 @@ select(TBLUSER.ID, TBLUSER.NAME)
 .and(TBLUSER.NAME.equal('王二蛋'))
 .groupBy(TBLUSER.ID);
 ```
-生成的sql
+
+按下快捷键`ctrl+alt+g`或者选择顶部菜单中的`Tools->CodeTools->Transform Jooq to Sql`生成sql：
 ```sql
 select
     TBLUSER.ID,
@@ -42,6 +43,12 @@ where
 group by
     TBLUSER.ID 
 ```
+
+## 功能3:把SQL转换成JOOQ代码（NEW）
+打开方式：`Tools->CodeTools->SQL/Jooq Converter...`，
+在同时小伙伴P的努力下，我们的插件多了一个界面，并且可以实现SQL转换成JOOQ代码
+![页面](/assets/blog_images/gui.png)
+感谢小伙伴的参与，我们的插件一定会越来越棒！
 
 ## 菜单位置
 ![菜单](/assets/blog_images/idea_plugin_menu.jpg)
