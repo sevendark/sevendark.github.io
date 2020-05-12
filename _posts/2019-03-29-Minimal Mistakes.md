@@ -26,6 +26,17 @@ Uncaught TypeError: Cannot read property 'value' of undefined
 - 超链接添加按钮样式与控制大小：`[Text](#link){: .btn .btn--primary .btn--x-large}`
 - 小提示：`paragraph with {: .notice--success}`
 
+小提示的示例(_注意空行与样式位置_)：
+```
+
+The world is being influenced by **COVID-19**
+{: .notice--success}
+
+```
+
+The world is being influenced by **COVID-19**
+{: .notice--success}
+
 ## 相关命令
 - 本地启动jekyll `bundle exec jekyll serve`
 - 同步ALGOLIA索引 `ALGOLIA_API_KEY=********** bundle exec jekyll algolia`
