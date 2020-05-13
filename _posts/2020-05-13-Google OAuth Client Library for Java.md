@@ -10,7 +10,9 @@ toc: true
 ---
 记录一下Google OAuth Java Client的学习过程，这套Lib可以很方便的集成第三方OAuth接口，如果对方没有提供SDK，这将是一个非常不错的选择。不止针对Google，任何第OAuth API都可以使用。该Lib包括了OAuth授权的流程，与Token的过期自动刷新功能。
 
+
 # 安装
+
 
 ## 添加依赖管理器
 
@@ -27,6 +29,7 @@ toc: true
     </dependencies>
 </dependencyManagement>
 ```
+
 
 ## 添加依赖，这里使用了最新的Apache HTTP Client，否则无法支持PATCH METHOD
 
@@ -53,7 +56,9 @@ toc: true
 </dependency>
 ```
 
+
 # 初始化OAuthFlow
+
 
 ## 初始化所需参数
 
@@ -67,6 +72,7 @@ val authServerUrl: String = "Auth Server URL"
 val callbackUrl: String = "Call Back URL"
 ```
 
+
 ## 初始化OAuthFlow
 
 ```kotlin
@@ -79,7 +85,9 @@ AuthorizationCodeFlow.Builder(
             .build()
 ```
 
+
 # 授权流程
+
 
 ## 授权流程第一步，获取授权跳转连接
 
@@ -90,6 +98,7 @@ authUrl.redirectUri = callbackUrl   //指定回调地址
 return authUrl
 ```
 
+
 ## 授权流程第二步，使用回调返回的state和code获取AccessToken与RefreshToken
 
 ```kotlin
@@ -98,6 +107,7 @@ authReq.redirectUri = callbackUrl
 val tokenResponse = authReq.execute()
 return oauthFlow.createAndStoreCredential(tokenResponse, userId)  //此处的userId可以通过第一步存储的state与userId映射获取，这一步会调用DataStore中的方法存储令牌信息。
 ```
+
 
 # 准备请求工厂与持久化组件
 
@@ -167,9 +177,10 @@ class CredentialDataStore : AbstractDataStore<StoredCredential>(CredentialDataSt
 }
 ```
 
+
 # 使用
 
-定义URL, `GenericUrl`类可自动根据子类添加了`@Key`注解的属性生成带有`queryParam`的URL，您可根据具体的第三方API定义子类，此处`PageableUrl`模拟了添加特定的分页queryParam
+定义URL, `GenericUrl`类可自动根据子类添加了`@Key`注解的属性生成带有`queryParam`的URL，您可根据具体的第三方API定义子类，此处`PageableUrl`模拟了添加特定的分页`queryParam`
 
 ```kotlin
 
@@ -206,6 +217,7 @@ val getUserRequest = requestFactory.buildGetRequest(userUrl)
 ```
 
 分享一个自动获取所有分页数据的代码
+
 ```kotlin
 fun <D: Any, T: PageResp<D>> getAllData(req: HttpRequest, kClass: KClass<T>, filter: ((D) -> Boolean)? = null): List<D> {
     val genericUrl = req.url
@@ -224,6 +236,18 @@ fun <D: Any, T: PageResp<D>> getAllData(req: HttpRequest, kClass: KClass<T>, fil
         } while(pageCount < pageNum)
          mutableList.toList()
     } else throw IllegalArgumentException("Url Not Pageable Url")
+}
+```
+
+与自动获取所有分页数据代码配套的类
+
+```kotlin
+abstract class PageResp<T> (
+        @Key("page_count") var pageCount: Int = 1
+) : DataResp<T>
+
+interface DataResp<T> {
+    fun getData(): List<T>
 }
 ```
 
