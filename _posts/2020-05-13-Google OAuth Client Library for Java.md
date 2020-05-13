@@ -12,7 +12,7 @@ toc: true
 
 # 安装
 
-# 首先添加依赖管理器
+## 添加依赖管理器
 
 ```xml
 <dependencyManagement>
@@ -28,7 +28,7 @@ toc: true
 </dependencyManagement>
 ```
 
-# 然后添加依赖，这里使用了最新的Apache HTTP Client，否则无法支持PATCH METHOD
+## 添加依赖，这里使用了最新的Apache HTTP Client，否则无法支持PATCH METHOD
 
 ```xml
 <dependency>
@@ -99,9 +99,9 @@ val tokenResponse = authReq.execute()
 return oauthFlow.createAndStoreCredential(tokenResponse, userId)  //此处的userId可以通过第一步存储的state与userId映射获取，这一步会调用DataStore中的方法存储令牌信息。
 ```
 
-# 使用
+# 准备请求工厂与持久化组件
 
-## 定义令牌初始化类
+定义令牌初始化类
 
 ```kotlin
 class CredentialInitializer(private val credential: Credential) : HttpRequestInitializer {
@@ -112,7 +112,7 @@ class CredentialInitializer(private val credential: Credential) : HttpRequestIni
 }
 ```
 
-## 通过userId获取请求工厂
+通过userId获取请求工厂
 
 ```kotlin
 /*
@@ -128,7 +128,7 @@ fun getRequestFactory(userId: String): HttpRequestFactory? {
 }
 ```
 
-## 定义DataStoreFactory，此处并没用写实现，因为此处DataStoreFactory只用于OAuth
+定义DataStoreFactory，此处没有写实现，因为此处DataStoreFactory只用于OAuth
 
 ```kotlin
 class CredentialDataStoreFactory : AbstractDataStoreFactory() {
@@ -136,7 +136,7 @@ class CredentialDataStoreFactory : AbstractDataStoreFactory() {
 }
 ```
 
-## 定义DataStore实现，Google提供了一些默认的实现，只用于存储在内存或者文件中，视情况使用
+定义DataStore实现，Google提供了一些默认的实现，只用于存储在内存或者文件中，视情况使用
 
 ```kotlin
 import com.google.api.client.auth.oauth2.StoredCredential
@@ -186,6 +186,66 @@ class CredentialDataStore : AbstractDataStore<StoredCredential>(CredentialDataSt
     override fun values(): MutableCollection<StoredCredential> = throw UnsupportedOperationException()
 
     override fun keySet(): MutableSet<String> = throw UnsupportedOperationException()
+}
+```
+
+# 使用
+
+定义URL, `GenericUrl`类可自动根据子类添加了`@Key`注解的属性生成带有`queryParam`的URL，您可根据具体的第三方API定义子类，此处`PageableUrl`模拟了添加特定的分页queryParam
+
+```kotlin
+
+abstract class PageableUrl  (
+        url: String,
+        @Key("page_size") val pageSize: Int = 300,
+        @Key("page_number") var pageNumber: Int = 1
+) : GenericUrl(url)
+
+class UserUrl(@Key val status: String) : PageableUrl("https://api.test.com/v2/users")
+
+```
+
+例如：`UserUrl("active")`生成的URL为：
+
+```
+https://api.test.com/v2/users?page_number=1&page_size=300&status=active
+```
+
+实体定义, 所有需要进行序列化操作的字段都要添加`@Key`注解
+
+```kotlin
+data class User (
+        @Key var id: String? = null,
+        @Key("first_name") var firstName: String? = null,
+        @Key("last_name") var lastName: String? = null
+)
+```
+
+生成GET请求
+
+```kotlin
+val getUserRequest = requestFactory.buildGetRequest(userUrl)
+```
+
+分享一个自动获取所有分页数据的代码
+```kotlin
+fun <D: Any, T: PageResp<D>> getAllData(req: HttpRequest, kClass: KClass<T>, filter: ((D) -> Boolean)? = null): List<D> {
+    val genericUrl = req.url
+    val mutableList = mutableListOf<D>()
+    return if(genericUrl is PageableUrl){
+        var pageNum = 0
+        var pageCount: Int
+        do {
+            pageNum ++
+            genericUrl.pageNumber = pageNum
+            val resp = req.execute().parseAs(kClass.java)  //此处会自动将返回的JSON反序列化
+            mutableList.addAll(resp.getData().run {
+                filter?.let { this.filter { filter(it) } }?:this
+            })
+            pageCount = resp.pageCount
+        } while(pageCount < pageNum)
+         mutableList.toList()
+    } else throw IllegalArgumentException("Url Not Pageable Url")
 }
 ```
 
