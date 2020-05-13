@@ -142,43 +142,21 @@ class CredentialDataStoreFactory : AbstractDataStoreFactory() {
 import com.google.api.client.auth.oauth2.StoredCredential
 import com.google.api.client.util.store.AbstractDataStore
 import com.google.api.client.util.store.DataStore
-import java.util.concurrent.locks.Lock
-import java.util.concurrent.locks.ReentrantLock
 
 @Component
 class CredentialDataStore : AbstractDataStore<StoredCredential>(CredentialDataStoreFactory(),
         StoredCredential.DEFAULT_DATA_STORE_ID) {
 
-    private val lock: Lock = ReentrantLock()
-
     override fun get(key: String): StoredCredential? {
-        lock.lock()
-        return try {
-            // 此处可以自己选择使用什么方式持久化令牌。
-            StoredCredential()
-        } finally {
-            lock.unlock()
-        }
+        // 此处可以自己选择使用什么方式持久化令牌。
     }
 
     override fun set(key: String, value: StoredCredential): DataStore<StoredCredential> {
-        lock.lock()
-        return try {
-             // 此处可以自己选择使用什么方式持久化令牌。
-             this
-        } finally {
-            lock.unlock()
-        }
+        // 此处可以自己选择使用什么方式持久化令牌。
     }
 
     override fun delete(key: String): DataStore<StoredCredential> {
-        lock.lock()
-        return try {
-             // 此处可以自己选择使用什么方式持久化令牌。
-             this
-        } finally {
-            lock.unlock()
-        }
+        // 此处可以自己选择使用什么方式持久化令牌。
     }
 
     override fun clear(): DataStore<StoredCredential> = throw UnsupportedOperationException()
