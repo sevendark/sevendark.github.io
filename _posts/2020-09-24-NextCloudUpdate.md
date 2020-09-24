@@ -14,11 +14,11 @@ Nextcloud Update And issues, "Step 4 is currently in process. Please reload this
 
 1. open settings
 
-![Settings](/assets/blog_images/fix1.jpg)
+![Settings](/assets/blog_images/fix1.png)
 
 2. click `Open Updater`
 
-![Detail](/assets/blog_images/fix2.jpg)
+![Detail](/assets/blog_images/fix2.png)
 
 # Fix stuck on step 4
 
