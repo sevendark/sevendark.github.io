@@ -22,12 +22,12 @@ Nextcloud Update And issues, "Step 4 is currently in process. Please reload this
 
 # Fix stuck on step 4
 
-1. click `Download now`, just download `.zip` file use your computer.
+- click `Download now`, just download `.zip` file use your computer.
 
 ![Detail](/assets/blog_images/fix2.png)
 
-2. use `scp` copy `.zip` file to your server `/var/lib/nextcloud/data/updater-[random string]/downloads/`.
+- use `scp` copy `.zip` file to your server `/var/lib/nextcloud/data/updater-[random string]/downloads/`.
 
-3. update `/var/lib/nextcloud/data/updater-[random string]/.step` change `start` to `end` 
+- update `/var/lib/nextcloud/data/updater-[random string]/.step` change `start` to `end` 
 
-4. `Open Updater` again, and click continue on top
+- `Open Updater` again, and click continue on top
