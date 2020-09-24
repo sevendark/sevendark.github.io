@@ -24,7 +24,7 @@ Nextcloud Update And issues, "Step 4 is currently in process. Please reload this
 
 1. click `Download now`, just download `.zip` file use your computer.
 
-![Detail](/assets/blog_images/fix2.jpg)
+![Detail](/assets/blog_images/fix2.png)
 
 2. use `scp` copy `.zip` file to your server `/var/lib/nextcloud/data/updater-[random string]/downloads/`.
 
