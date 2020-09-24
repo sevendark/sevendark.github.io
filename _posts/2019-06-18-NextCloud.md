@@ -227,20 +227,21 @@ server {
         proxy_headers_hash_max_size 512;
         proxy_headers_hash_bucket_size 64;
 
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_buffering off;
         proxy_redirect off;
         proxy_max_temp_file_size 0;
-        proxy_pass http://127.0.0.1:8000;
+        proxy_pass https://127.0.0.1:8443;
     }
 }
 ```
 
-Apache2 更改默认监听端口为8000
+Apache2 更改SSL默认监听端口为8443
 
-`/etc/apache2/sites-enabled/000-default.conf`
+`/etc/apache2/sites-enabled/000-default-le-ssl.conf`
 
 ```
-<VirtualHost *:8000>
+<VirtualHost *:8443>
 ```
 
 Nextcloud 配置服务器Host
