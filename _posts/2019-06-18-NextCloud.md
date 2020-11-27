@@ -87,7 +87,7 @@ sudo apt-get install php
 sudo apt-get install php-dompdf unzip
 sudo apt-get install php-gd php-json php-mysql php-curl php-mbstring
 sudo apt-get install php-intl php-imagick php-xml php-zip
-sudo apt-get install libapache2-mod-php
+sudo apt-get install libapache2-mod-php php-bcmath php-gmp
 ```
 
 

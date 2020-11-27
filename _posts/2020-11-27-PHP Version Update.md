@@ -11,6 +11,12 @@ header:
 ---
 Update PHP Version, Update Apache2 PHP Version, Swich PHP version on Ubuntu
 
+# Clean All PHP 
+
+```sh
+sudo aptitude purge `dpkg -l | grep php| awk '{print $2}' |tr "\n" " "`
+```
+
 # Update PHP version
 
 - Update php version
@@ -28,8 +34,14 @@ sudo apt-get install -y php7.4
 
 # Swich PHP version
 
+- Swich Terminal PHP version
 ```sh
 sudo update-alternatives --set php /usr/bin/php7.4
+```
+
+- Swich php-fpm version
+```sh
+
 ```
 
 # Update Apache2 PHP version
