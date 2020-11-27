@@ -9,9 +9,9 @@ toc: true
 header:
   teaser: /assets/blog_images/php-logo.png
 ---
-Update PHP Version, And Update Apache2 PHP Version
+Update PHP Version, Update Apache2 PHP Version, Swich PHP version on Ubuntu
 
-# Update php version
+# Update PHP version
 
 - Update php version
 ```sh
@@ -26,7 +26,13 @@ sudo apt update
 sudo apt-get install -y php7.4
 ```
 
-# Update apache2 php version
+# Swich PHP version
+
+```sh
+sudo update-alternatives --set php /usr/bin/php7.4
+```
+
+# Update Apache2 PHP version
 
 - Install apache2 mods
 ```sh
