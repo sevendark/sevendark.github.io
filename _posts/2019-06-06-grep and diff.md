@@ -14,9 +14,9 @@ header:
 # Prepare Data File
 
 ```sh
-$ echo "java" > aaa.txt
-$ echo "php" >> aaa.txt
-$ echo "java" > bbb.txt
+echo "java" > aaa.txt
+echo "php" >> aaa.txt
+echo "java" > bbb.txt
 ```
 # 常用命令
 
@@ -31,13 +31,13 @@ $ echo "java" > bbb.txt
 
 展示bbb.txt中包含的aaa.txt中的行
 ```sh
-$ grep -x -F -f aaa.txt bbb.txt
+grep -x -F -f aaa.txt bbb.txt
 java
 ```
 
 展示aaa.txt中除去bbb.txt包含的行
 ```sh
-$ grep -x -F -v -f bbb.txt aaa.txt
+grep -x -F -v -f bbb.txt aaa.txt
 php
 ```
 
@@ -45,7 +45,7 @@ php
 
 查看aaa.txt与bbb.txt的不同
 ```sh
-$ diff -c aaa.txt bbb.txt
+diff -c aaa.txt bbb.txt
 *** aaa.txt	Thu Jun  6 11:01:49 2019
 --- bbb.txt	Thu Jun  6 11:02:10 2019
 ***************

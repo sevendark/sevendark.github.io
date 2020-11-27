@@ -23,22 +23,22 @@ header:
 
 ## 执行snap安装命令
 ```sh
-$ sudo snap install nextcloud
+sudo snap install nextcloud
 ```
 
 ## 启动服务
 ```sh
-$ sudo snap start nextcloud
+sudo snap start nextcloud
 ```
 
 ## 开启https模式
 ```sh
-$ sudo nextcloud.enable-https lets-encrypt
+sudo nextcloud.enable-https lets-encrypt
 ```
 
 ## 设置启动端口
 ```sh
-$ sudo snap set nextcloud ports.http=80
+sudo snap set nextcloud ports.http=80
 ```
 
 官方snap仓库地址：[https://github.com/nextcloud/nextcloud-snap](https://github.com/nextcloud/nextcloud-snap){:target="_blank"}
@@ -48,7 +48,7 @@ $ sudo snap set nextcloud ports.http=80
 ## 安装mysql
 
 ```sh
-$ sudo apt-get install mysql-server-5.7
+sudo apt-get install mysql-server-5.7
 ```
 
 ## 配置编码
@@ -67,7 +67,7 @@ innodb_file_per_table=1
 ## 配置root密码，并允许非sudo登陆
 注意在这里登录时可以直接回车进入，初始安装没有密码
 ```sh
-$ sudo mysql -u root -p
+sudo mysql -u root -p
 myqsl > ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your-password';
 ```
 
@@ -83,11 +83,11 @@ mysql > flush privileges;
 ## 安装php，及其模块
 
 ```sh
-$ sudo apt-get install php
-$ sudo apt-get install php-dompdf unzip
-$ sudo apt-get install php-gd php-json php-mysql php-curl php-mbstring
-$ sudo apt-get install php-intl php-imagick php-xml php-zip
-$ sudo apt-get install libapache2-mod-php
+sudo apt-get install php
+sudo apt-get install php-dompdf unzip
+sudo apt-get install php-gd php-json php-mysql php-curl php-mbstring
+sudo apt-get install php-intl php-imagick php-xml php-zip
+sudo apt-get install libapache2-mod-php
 ```
 
 
@@ -104,20 +104,20 @@ upload_max_filesize = 50M
 
 ## 安装reids
 ```sh
-$ sudo apt-get install php-redis redis-server
-$ sudo apt-get install php-apcu 
+sudo apt-get install php-redis redis-server
+sudo apt-get install php-apcu 
 ```
 
 
 ## 安装apache2
 ```sh
-$ sudo apt-get install apache2
+sudo apt-get install apache2
 ```
 
 ## 开启ssl，并设置证书
 ```sh
-$ sudo wget https://dl.eff.org/certbot-auto && sudo chmod a+x certbot-auto
-$ sudo ./certbot-auto --apache --agree-tos --rsa-key-size 4096 --email your@email.com --redirect -d your.domain.com
+sudo wget https://dl.eff.org/certbot-auto && sudo chmod a+x certbot-auto
+sudo ./certbot-auto --apache --agree-tos --rsa-key-size 4096 --email your@email.com --redirect -d your.domain.com
 ```
 
 ### 自动更新证书
@@ -126,33 +126,33 @@ $ sudo ./certbot-auto --apache --agree-tos --rsa-key-size 4096 --email your@emai
 
 添加库
 ```sh
- $ sudo apt-get update
- $ sudo apt-get install software-properties-common
- $ sudo add-apt-repository universe
- $ sudo add-apt-repository ppa:certbot/certbot
- $ sudo apt-get update
+ sudo apt-get update
+ sudo apt-get install software-properties-common
+ sudo add-apt-repository universe
+ sudo add-apt-repository ppa:certbot/certbot
+ sudo apt-get update
 ```
 
 安装certbot
 ```sh
- $ sudo apt-get install certbot python-certbot-apache
+ sudo apt-get install certbot python-certbot-apache
 ```
 
 在apache中安装certbot
 ```sh
- $ sudo certbot --apache
+ sudo certbot --apache
 ```
 
 配置证书自动更新
 ```sh
- $ sudo certbot renew --dry-run
+ sudo certbot renew --dry-run
 ```
 
 
 ## 配置apache2
 开启`mod_headers`模块
 ```sh
-$ sudo a2enmod headers
+sudo a2enmod headers
 ```
 
 编辑`/etc/apache2/sites-available/000-default-le-ssl.conf`文件：
