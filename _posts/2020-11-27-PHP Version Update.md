@@ -11,10 +11,9 @@ header:
 ---
 Update PHP Version, And Update Apache2 PHP Version
 
-# update php version
+# Update php version
 
-- update php version
-
+- Update php version
 ```sh
 sudo apt update
 sudo apt-get install software-properties-common
@@ -22,23 +21,20 @@ sudo add-apt-repository ppa:ondrej/php
 ```
 
 - install php 7.4
-
 ```sh
 sudo apt update
 sudo apt-get install -y php7.4
 ```
 
-# update apache2 php version
+# Update apache2 php version
 
 - Install apache2 mods
-
 ```sh
 sudo apt update
 sudo apt-get install -y libapache2-mod-php7.4
 ```
 
 - Enter apache2 mods directory
-
 ```sh
 cd /etc/apache2/mods-enabled
 ```
@@ -51,14 +47,12 @@ ls -l |grep php
 - Remove `php[version].conf` and `php[version].load` file
 
 - Create link file for new php version
-
 ```sh
 ln -s ../mods-enabled/php[version].conf php[version].conf 
 ln -s ../mods-enabled/php[version].load php[version].load 
 ```
 
 - Restart apache2
-
 ```sh
 sudo systemctl restart apache2
 ```
