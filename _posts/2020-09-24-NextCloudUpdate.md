@@ -32,3 +32,19 @@ Nextcloud Update And issues, "Step 4 is currently in process. Please reload this
 
 - `Open Updater` again, and click continue on top
 
+
+# Connection Refused Exception
+
+e.g.
+```
+[Sat Mar 27 00:35:35.868963 2021] [php7:error] [pid 29625] [client 127.0.0.1:56664] PHP Fatal error:  Uncaught Doctrine\\DBAL\\DBALException: Failed to connect to the database: An exception occurred in driver: SQLSTATE[HY000] [2002] Connection refused in /var/www/nextcloud/lib/private/DB/Connection.php:72
+```
+
+Try this:
+
+```bash
+sudo apt-get update
+sudo apt-get install --reinstall apache2
+sudo apt-get install libapache2-mod-authnz-external
+sudo apt-get install libapache2-mod-security2
+```
