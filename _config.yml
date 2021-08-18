@@ -1,4 +1,4 @@
-remote_theme             : "mmistakes/minimal-mistakes@4.20.2"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default"
 # Site Settings
 locale                   : "zh"
@@ -22,9 +22,9 @@ search                   : true
 search_full_content      : true
 search_provider          : "algolia"
 algolia:
-  application_id         : "ZFQT3WUK7B"
-  index_name             : "blog"
-  search_only_api_key    : "45a2db279aa615b36037af9d0c13dfb4"
+  application_id         : "MV7NXE4L0X"
+  index_name             : "search"
+  search_only_api_key    : "2d0cea4fe862e468a92793883ffcca03"
   powered_by             : true
 
 # comments:
