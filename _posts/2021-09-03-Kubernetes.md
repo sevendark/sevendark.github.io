@@ -9,20 +9,21 @@ toc: true
 ---
 Install Kubernetes and run minikuber on your local, and deploy spring cloud on kubernetes.
 
+> See also
+> How to install Docker on WSL2 <https://blog.sevendark.cn/tec/Docker/>
+
+
 # Install kubectl On Linux
 
 <https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/>
 
-kubectl reference
-<https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands>
+> kubectl reference <https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands>
 
 # Install Minikube
 
 <https://minikube.sigs.k8s.io/docs/start/>
 
 ### Enable Ingress
-
-<https://github.com/kubernetes/ingress-nginx/blob/main/docs/deploy/index.md#docker-desktop>
 
 Enable ingress
 
@@ -31,6 +32,7 @@ minikube addons enable ingress
 ```
 
 > if enable failed, add proxy
+> How to config ssh proxy <https://blog.sevendark.cn/tec/SSH/#ssh-use-proxy>
 
 Open tunnel, Need keep this command alive
 
@@ -39,6 +41,8 @@ minikube tunnel
 ```
 
 then make sure your ingress config bind on host: `localhost`, and access them by `localhost`
+
+> <https://github.com/kubernetes/ingress-nginx/blob/main/docs/deploy/index.md#docker-desktop>
 
 # Kubernetes Compontents
 
