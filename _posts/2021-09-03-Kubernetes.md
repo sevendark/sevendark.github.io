@@ -9,7 +9,6 @@ toc: true
 ---
 Install Kubernetes and run minikuber on your local, and deploy spring cloud on kubernetes.
 
-> See also
 > How to install Docker on WSL2 <https://blog.sevendark.cn/tec/Docker/>
 
 ## Install kubectl On Linux
