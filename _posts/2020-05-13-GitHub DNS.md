@@ -13,7 +13,7 @@ header:
 windows hosts 文件位置：`C:\Windows\System32\drivers\etc\hosts`
 linux hosts 文件位置：`/etc/hosts`
 
-```
+```sh
 140.82.113.4       github.com
 140.82.112.4       gist.github.com
 140.82.114.5       api.github.com

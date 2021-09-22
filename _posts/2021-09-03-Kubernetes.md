@@ -12,14 +12,13 @@ Install Kubernetes and run minikuber on your local, and deploy spring cloud on k
 > See also
 > How to install Docker on WSL2 <https://blog.sevendark.cn/tec/Docker/>
 
-
-# Install kubectl On Linux
+## Install kubectl On Linux
 
 <https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/>
 
 > kubectl reference <https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands>
 
-# Install Minikube
+## Install Minikube
 
 <https://minikube.sigs.k8s.io/docs/start/>
 
@@ -44,7 +43,7 @@ then make sure your ingress config bind on host: `localhost`, and access them by
 
 > <https://github.com/kubernetes/ingress-nginx/blob/main/docs/deploy/index.md#docker-desktop>
 
-# Kubernetes Compontents
+## Kubernetes Compontents
 
 - Service
 <https://kubernetes.io/docs/concepts/services-networking/service/>
@@ -52,9 +51,9 @@ then make sure your ingress config bind on host: `localhost`, and access them by
 - Ingress
 <https://kubernetes.io/docs/concepts/services-networking/ingress/>
 
-# Some command
+## Some command
 
-## check the logs
+### check the logs
 
 `-n` means namespace
 
@@ -62,19 +61,19 @@ then make sure your ingress config bind on host: `localhost`, and access them by
 kubectl logs --selector=app=zoomservice --tail 1 -n eb-services-qa
 ```
 
-## get the pod status
+### get the pod status
 
 ```sh
 kubectl describe pod  zoomservice-5bd9b8d5bb-8xsbf -n eb-services-qa
 ```
 
-## get all things status in this namespace
+### get all things status in this namespace
 
 ```sh
 kubectl get all --namespace=eb-services-qa
 ```
 
-## get ingress status
+### get ingress status
 
 ```sh
 kubectl get ingress -n eb-services-qa
