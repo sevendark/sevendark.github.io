@@ -2,7 +2,7 @@ remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default"
 # Site Settings
 locale                   : "zh"
-title                    : "SevenDark 的博客"
+title                    : "SevenDark 的博客 漆夜之书"
 title_separator          : "|"
 name                     : "Timothy ji"
 description              : "一些技术博客，还有生活博客，欢迎查看"
