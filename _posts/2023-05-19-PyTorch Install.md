@@ -7,7 +7,7 @@ tags:
   - AI
 toc: true
 ---
-Install Pytorch
+Install Pytorch，And some AI tools
 
 # Install Pytorch
 
@@ -43,4 +43,11 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 
 ```sh
 conda install torchvision 
+```
+
+## Install matplotlib
+该工具可以通过tensor中存储的二维数据绘制图片
+
+```sh
+conda install matplotlib 
 ```
