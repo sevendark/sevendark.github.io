@@ -54,9 +54,6 @@ author:
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/sevendark/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/seven7dark/"
 
 # Site Footer
 footer:
@@ -64,9 +61,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/sevendark/
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/seven7dark/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/timothy-ji-579163184/"
